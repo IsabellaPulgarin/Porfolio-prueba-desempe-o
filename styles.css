@@ -1,0 +1,465 @@
+/*Reset to default styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Color variables defined on the page*/
+:root{
+    --blanco:rgb(255, 255, 255);
+    --negro:rgb(0, 0, 0);
+    --blue: #011418;
+}
+
+/*Index page styles*/
+.body-start{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-start{
+    width: 100%;
+    position: fixed;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+nav{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    font-size: 3rem;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-decoration: none;
+    color: var(--blanco);
+    transition: transform 1.3s ease;
+
+}
+
+.link:hover{
+    transform: scale(1.20);
+    color:var(--negro);
+}
+
+.inicio-titulo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    height: 100vh;
+    line-height: 99px;
+    
+}
+
+.inicio-titulo h1{
+    font-size: 5rem;
+    color: var(--blanco);
+}
+
+.inicio-titulo h3{
+    font-size: 2rem;
+    color: var(--blanco);
+}
+
+.inicio-titulo h6{
+    font-size: 1.2rem;
+    color: var(--blanco);
+}
+
+.footer-start{
+    background-color: var(--blue);
+    color: var(--blanco);
+    text-align: center;
+    line-height: 36.2px;
+}
+
+/*presentation page styles*/
+
+.header-color{
+    width: 100%;
+    position: fixed;
+    background-image: url(imagenes/Fondo.jpg);
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--blanco);
+}
+
+.presentation section img{
+    margin-left: 20%;
+    border-radius: 50%;
+    width: 55%;
+    box-shadow: 0 0 30px var(--negro);
+    transition: transform 2s ease;
+
+}
+
+.presentation section img:hover{
+    transform: scale(1.30);
+}
+
+.presentation-text{
+    width: 50%;
+    font-size: 2rem;
+}
+
+.presentation-text h2{
+    padding: 5%;
+    text-align: center;
+}
+.presentation-text p{
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/*portfolio page styles*/
+
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    background-color: var(--blanco);
+}
+
+.skills{
+    background-color: #184953;
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--negro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    flex-direction: column;
+    color: var(--blanco);
+    transition: transform 1.4s ease;
+
+}
+
+
+.me{
+    background-color: #184953;
+    width: 38%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--negro);
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--blanco);
+    transition: transform 1.4s ease;
+
+}
+
+.skills:hover{
+    background-color: #1f7f92;
+    color: var(--negro);
+    transform: scale(1.05);
+}
+
+.me:hover{
+    background-color: #1f7f92;
+    color: var(--negro);
+    transform: scale(1.05);
+
+}
+
+.description-projects{
+    display: flex;
+    justify-content: center;
+}
+
+.description-projects p{
+    background-color: #184953;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px var(--negro);
+    font-size: 1.4rem;
+    line-height: 1.6em;
+    text-align: center;
+    color: var(--blanco);
+    transition: transform 1.4s ease;
+}
+
+.description-projects p:hover{
+    background-color: #1f7f92;
+    color: var(--negro);
+    transform: scale(1.05);
+}
+
+.flecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.flecha-link{
+    width: 10%;
+    font-size: 7rem;
+    text-decoration: none;
+    color: var(--blue);
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.flecha-link:hover{
+    color: #19a8c5;
+
+}
+
+/*Projects*/
+
+.Works{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-image: url(./imagenes/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Works h2{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    padding: 3%;
+    background-color: rgba(0, 255, 255, 0);
+    backdrop-filter: blur(30px) ;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    padding: 6%;
+    padding-left: 9%;
+    gap: 10%;
+    background-color: rgba(0, 255, 255, 0);
+    backdrop-filter: blur(30px) ;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 1.5s ease;
+}
+.card h3{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+
+.card:hover{
+    transform: scale(1.20);
+}
+
+a{
+    width: 85%;
+    height: 100%;
+    justify-self: center;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px var(--negro);
+}
+
+/*Contacts page style*/
+
+.main-contacts{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./imagenes/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-contacts{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(30px) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2{
+    text-shadow: 0 0 30px var(--blanco);
+    font-size: 4rem;
+    margin-bottom: 80px;
+    color: var(--blanco);
+}
+
+.contact ul li{
+    list-style: none;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 1.5rem;
+    line-height: 2em;
+
+}
+
+.contact a{
+    color: var(--blanco);
+}
+
+/*Media query area*/
+
+/*Styles for tablet view*/
+@media (max-width: 768px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        gap: 30px;
+    }
+
+    .link{
+        margin: 0;
+        font-size: 3rem;
+        line-height: 1.5em;
+
+    }
+
+    .skills{
+        width: 35%;
+    }
+    .me{
+        margin-top: 120px;
+        width: 50%;
+    }
+
+    .projects{
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .presentation{
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .presentation img{
+        margin-top: 280px;
+    }
+
+    .presentation-text{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .contact h2{
+        text-align: center;
+    }
+}
+
+/*Styles for mobile view*/
+@media (max-width: 480px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+    }
+
+    .link{
+        margin: 0;
+        font-size: 2rem;
+        line-height: 1.5em;
+
+    }
+
+    .inicio-titulo h1{
+        font-size: 3.5rem;
+    }
+
+    .description{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills{
+        margin-top: 130px;
+    }
+
+    .skills,.me{
+        width: 80%;
+    }
+
+    .description-projects{
+        margin-top: 350px;
+    }
+
+    .description-projects p{
+        width: 80%;
+        height: 20%;
+    }
+
+    .projects{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .presentation{
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+
+    .presentation img{
+        margin-top: 170px;
+    }
+
+    .presentation-text{
+        width: 80%;
+    }
+
+    .presentation-text p{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .contact h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+   
+}
